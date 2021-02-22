@@ -1,3 +1,6 @@
+#!/bin/bash
+# Usage: ./gen-blocklet.sh DIR_NAME BLOCKLET_NAME
+
 BLOCKLET_FOLDER="blocklets/$1"
 mkdir -p $BLOCKLET_FOLDER
 echo -e "[$1/$2]\n$(cat ./example-blocklet-conf)" > $BLOCKLET_FOLDER/example-config
