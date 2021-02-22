@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#012456"}
+
+powershell "Get-Host | Select-Object Version" | awk 'NR==4 {print $1}' | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
