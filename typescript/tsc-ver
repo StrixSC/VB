@@ -1,6 +1,9 @@
 #!/bin/bash
+ICON=${ICON:-"ﯤ"}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#007ACC"}
 
-tsc --version | awk -v var=' ﯤ ' '{print var "v"$2}' | awk '{print $1 " " $2}'
-echo ""
-echo "#007ACC"
-
+tsc --version | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $2}'
+echo $SHORT_VERSION
+echo $COLOR

@@ -13,5 +13,9 @@ Blocklets to show the version of your programming languages or technologies!
 Because I like i3-blocks and it's handy to have versions or information regarding those technologies on demand. 
 
 
-Also has very little dependencies, so it's great! 
+Also has very little dependencies.
+
+
+## Example:
+
 ![example.png](./example.png)
