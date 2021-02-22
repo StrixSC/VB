@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#000000"}
+
+# Create your command here
+
+echo $SHORT_VERSION
+echo $COLOR
