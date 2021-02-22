@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#0298C3"}
+
+perl --version | awk 'NR==2 { print $9 }' | cut -c3- | sed 's/.$//' | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
