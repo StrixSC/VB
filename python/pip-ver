@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pip --version | awk '{print "PIP v"$2}'
+echo ""
+echo "#544327"

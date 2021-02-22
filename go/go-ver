@@ -1,0 +1,5 @@
+#!/bin/bash
+COLOR=${COLOR:-#29BEB0}
+go version 2>/dev/null | awk '{print $3}' | cut -c "3-" | awk '{print " v"$1}'
+echo ""
+echo $COLOR 

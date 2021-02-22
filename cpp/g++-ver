@@ -1,0 +1,11 @@
+#/bin/bash
+
+ICON=${ICON:-" "}
+PREFIX=${PREFIX:- "v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#F34B7D"}
+
+g++ --version | awk -v icon=$ICON -v prefix="$PREFIX" 'NR==1 {print icon prefix $3}'
+
+echo $SHORT_VERSION
+echo $COLOR

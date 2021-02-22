@@ -1,0 +1,5 @@
+#!/bin/bash
+
+python --version | awk '{print " v"$2}'
+echo ""
+echo "#F7CA3E"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tsc --version | awk -v var=' ﯤ ' '{print var "v"$2}' | awk '{print $1 " " $2}'
+echo ""
+echo "#007ACC"
+
