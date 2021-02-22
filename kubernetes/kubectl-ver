@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ICON=${ICON:-"ﴱ"}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#4040FF"}
+
+kubectl version 2>/dev/null | awk '{print $5}' | cut -c12-20 | cut -c3- | sed 's/.$//' | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
