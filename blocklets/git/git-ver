@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#F6F8FA"}
+
+# Create your command here
+git --version | awk '{print $3}' | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
