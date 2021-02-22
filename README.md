@@ -22,7 +22,7 @@ For best use, make sure to use [NerdFonts](https://www.nerdfonts.com/)
 
 ## Example:
 
-![example.png](./example.png)
+![example_1.png](./example_1.png)
 ![example_2.png](./example_2.png)
 ![example_3.png](./example_3.png)
 
