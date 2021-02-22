@@ -23,8 +23,8 @@ For best use, make sure to use [NerdFonts](https://www.nerdfonts.com/)
 ## Example:
 
 ![example.png](./example.png)
-![example_2.png](./example.png)
-![example_3.png](./example.png)
+![example_2.png](./example_2.png)
+![example_3.png](./example_3.png)
 
 ## Todo:
 
