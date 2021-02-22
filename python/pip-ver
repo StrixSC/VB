@@ -1,5 +1,11 @@
 #!/bin/bash
 
-pip --version | awk '{print "PIP v"$2}'
-echo ""
-echo "#544327"
+ICON=${ICON:-"PIP"}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#544327"}
+
+pip --version | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $2}'
+
+echo $SHORT_VERSION
+echo $COLOR
