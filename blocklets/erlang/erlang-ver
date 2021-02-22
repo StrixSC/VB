@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#B83998"}
+
+# Create your command here
+erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell | cut -c2-3 | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
