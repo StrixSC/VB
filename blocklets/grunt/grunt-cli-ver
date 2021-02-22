@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#FBA919"}
+
+# Create your command here
+grunt --version | awk '{print $2}' | cut -c2- | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
