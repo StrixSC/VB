@@ -1,0 +1,7 @@
+[ghost/ghost-cli-ver]
+#ICON=
+#COLOR=
+#PREFIX=
+#SHORT_VERSION=
+command={PATH_TO_SCRIPT}
+interval=10
