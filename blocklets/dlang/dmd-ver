@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#BA595E"}
+
+# Enter command here
+dmd --version | awk 'NR==1 {print $4}' | cut -c2- | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
