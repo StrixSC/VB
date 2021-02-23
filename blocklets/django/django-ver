@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-""}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#0C4B33"}
+
+# Enter command here
+python -m django --version | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1 }'
+
+echo $SHORT_VERSION
+echo $COLOR
