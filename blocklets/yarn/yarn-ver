@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ICON=${ICON:-"Yarn"}
+PREFIX=${PREFIX:-"v"}
+SHORT_VERSION=${SHORT_VERSION:-""}
+COLOR=${COLOR:-"#2B8AB5"}
+
+# Create your command here
+yarn --version | awk -v icon=$ICON -v prefix=$PREFIX '{print icon " " prefix $1}'
+
+echo $SHORT_VERSION
+echo $COLOR
