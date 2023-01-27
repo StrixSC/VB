@@ -1,23 +1,19 @@
 # Version Blocklets
 
-### More blocklets
-##### This time for coders!
+<img width="15%" align="right" src="http://strix.site/assets/vb.svg" />
 
 ### What?
 
-Blocklets to show the version of your programming languages or technologies!
+Blocklets to show the version of your tech.
 
 ### Why?
 
-Because I like i3-blocks and it's handy to have versions or information regarding those technologies displayed on screen sometimes.
-
-Also has very little dependencies. Each language/tech will have only its respective dependency. I.E.: obviously to know python's version, you will need python.
+Because I like i3-blocks and it's handy to have version info on hand sometimes.
 
 Blocklets only depend on:
   - awk
   - cut
   - sed
-  - Technology's interpreter, compiler or cli
 
 ### Installation
 
@@ -31,7 +27,3 @@ For best use, make sure to use [NerdFonts](https://www.nerdfonts.com/)
 ![example_1.png](./example_1.png)
 ![example_2.png](./example_2.png)
 ![example_3.png](./example_3.png)
-
-## Todo:
-
-- Add more technologies
